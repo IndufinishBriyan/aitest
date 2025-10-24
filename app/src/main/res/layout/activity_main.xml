@@ -97,6 +97,8 @@
 
         <com.google.android.material.chip.Chip
             style="@style/Widget.Material3.Chip.Assist.Elevated"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:text="@string/chip_people"
             app:chipBackgroundColor="@color/chip_background"
             app:chipIcon="@drawable/ic_people"
@@ -105,6 +107,8 @@
 
         <com.google.android.material.chip.Chip
             style="@style/Widget.Material3.Chip.Assist.Elevated"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:text="@string/chip_sales"
             app:chipBackgroundColor="@color/chip_background"
             app:chipIcon="@drawable/ic_shopping_bag"
@@ -113,6 +117,8 @@
 
         <com.google.android.material.chip.Chip
             style="@style/Widget.Material3.Chip.Assist.Elevated"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:text="@string/chip_retention"
             app:chipBackgroundColor="@color/chip_background"
             app:chipIcon="@drawable/ic_favorite"
