@@ -8,4 +8,24 @@
     <color name="black">#000000</color>
     <color name="white">#FFFFFF</color>
     <color name="ic_launcher_background">#4CAF50</color>
+
+    <!-- Dashboard palette -->
+    <color name="dashboard_gradient_start">#FF6FD8</color>
+    <color name="dashboard_gradient_end">#4A90E2</color>
+    <color name="summary_card_background">#FDF6FF</color>
+    <color name="summary_card_title">#7030A0</color>
+    <color name="summary_card_value">#3F2E63</color>
+    <color name="chip_background">#1AFFFFFF</color>
+    <color name="chip_icon_tint">#FFFFFFFF</color>
+
+    <color name="metric_card_mint">#E4F9F5</color>
+    <color name="metric_card_peach">#FFE8D1</color>
+    <color name="metric_card_lavender">#EFE4FF</color>
+    <color name="metric_card_sky">#E1F1FF</color>
+    <color name="metric_card_sunny">#FFF8D6</color>
+
+    <color name="trend_positive_background">#1A2E7D32</color>
+    <color name="trend_positive_text">#2E7D32</color>
+    <color name="trend_negative_background">#1AD32F2F</color>
+    <color name="trend_negative_text">#D32F2F</color>
 </resources>

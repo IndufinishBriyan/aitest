@@ -1,7 +1,7 @@
 # AITest Android App
 
-Deze repository bevat een volledig Android-project dat klaar is om te openen in Android Studio.
-Het project gebruikt Kotlin, AndroidX en Material Design componenten en toont een welkomstbericht in de hoofdactiviteit.
+Deze repository bevat een volledig Android-project dat klaar is om te openen in Android Studio. 
+Het project gebruikt Kotlin, AndroidX en Material Design 3 componenten en toont een speelse data-dashboard template in de hoofdactiviteit.
 
 ## Structuur
 - `app/`: Bevat de Android-app module met broncode, resources en configuratie.
@@ -28,8 +28,9 @@ gradle :app:assembleDebug
 Het gegenereerde APK-bestand vind je daarna in `app/build/outputs/apk/debug/`.
 
 ## Functies
-- Modern Material Design-thema met ondersteuning voor donker thema.
-- `MainActivity` is de launcher-activiteit en vormt het startpunt van de app.
-- Welkomstbericht dat je eenvoudig kunt aanpassen in `app/src/main/res/values/strings.xml`.
+- Speelse data-weergave template met gradient achtergrond, categorie-chips en kleurrijke kaarten voor kernstatistieken.
+- Recyclerview-adapter en voorbeelddata waarmee je snel echte cijfers kunt injecteren.
+- Modern Material Design 3 thema met ondersteuning voor donker thema.
+- Bundelde Android Studio run configuration zodat je direct kunt starten.
 
 Veel plezier met het uitbreiden van de app!
