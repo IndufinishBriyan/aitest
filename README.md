@@ -15,6 +15,7 @@ Het project gebruikt Kotlin, AndroidX en Material Design componenten en toont ee
 2. **Run configuration kiezen**
    - In de toolbar bovenaan zou nu een run configuration **app** zichtbaar moeten zijn. Deze is voorgeconfigureerd met de module `AITestApp.app` en start de launcher-activiteit `com.example.aitest.MainActivity`.
    - Zie je "Add Configuration" of toont de bestaande configuratie "No module"? Klik dan op het dropdown-menu, kies **Edit Configurations...**, selecteer **app** en kies in het veld **Module** de optie `AITestApp.app`. Bevestig met **OK**.
+   - Krijg je tijdens het uitvoeren een melding over `pmInstallFlags` die null is? Open dan opnieuw **Edit Configurations...**, kies **app** en klik op **Apply** zodat Android Studio de (meegeleverde) lege installatie-opties opslaat. Daarna kun je de run-knop opnieuw proberen.
 3. **App starten**
    - Kies een emulator of verbonden apparaat (Android 7.0 of hoger) in dezelfde toolbar.
    - Klik op **Run** (▶) om de applicatie te bouwen en te starten.
