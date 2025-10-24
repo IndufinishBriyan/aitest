@@ -6,7 +6,7 @@
         <item name="colorSecondary">@color/accent_cyan</item>
         <item name="colorSurface">@color/surface_primary</item>
         <item name="colorSurfaceVariant">@color/surface_secondary</item>
-        <item name="colorBackground">@color/dashboard_background</item>
+        <item name="android:colorBackground">@color/dashboard_background</item>
         <item name="colorOnSurface">@color/text_primary</item>
         <item name="colorOnBackground">@color/text_primary</item>
         <item name="android:statusBarColor" tools:targetApi="l">@android:color/transparent</item>
