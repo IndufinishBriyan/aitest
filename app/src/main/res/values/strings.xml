@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">AITest</string>
+    <string name="welcome_message">Welkom bij de volledige Android-app!
+Deze app is een eenvoudige basis waarop je verder kunt bouwen.</string>
+</resources>
