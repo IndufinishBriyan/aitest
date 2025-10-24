@@ -5,6 +5,8 @@ app/build/
 
 # Android Studio
 .idea/
+!.idea/runConfigurations/
+!.idea/runConfigurations/*.xml
 *.iml
 
 # Local configuration

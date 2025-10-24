@@ -1,0 +1,13 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="app" type="AndroidRunConfigurationType" factoryName="Android App">
+    <module name="app" />
+    <option name="MODE" value="default_activity" />
+    <option name="DEPLOY" value="true" />
+    <option name="ARTIFACT_NAME" />
+    <option name="PM_INSTALL_OPTIONS" />
+    <option name="ACTIVITY_CLASS" value="com.example.aitest.MainActivity" />
+    <method v="2">
+      <option name="Android.Gradle.BeforeRunTask" enabled="true" />
+    </method>
+  </configuration>
+</component>

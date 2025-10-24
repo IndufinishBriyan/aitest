@@ -11,12 +11,12 @@ Het project gebruikt Kotlin, AndroidX en Material Design componenten en toont ee
 ## Aan de slag
 1. **Project importeren**
    - Open de map in Android Studio (Giraffe of nieuwer aanbevolen).
-   - Laat Android Studio een Gradle-sync uitvoeren; hierdoor wordt automatisch een "app" run configuration aangemaakt.
-2. **Run configuration ontbreekt?**
-   - Ga naar **Run > Edit Configurations...**, klik op **+** en kies **Android App**.
-   - Selecteer als module `app` en bevestig. De configuratie start `com.example.aitest.MainActivity`, de launcher-activiteit die in `app/src/main/AndroidManifest.xml` staat geregistreerd.
+   - Zodra het project is geladen, start Android Studio automatisch een Gradle-sync. Wacht tot deze voltooid is (linksonder verschijnt "Gradle sync finished").
+2. **Run configuration kiezen**
+   - In de toolbar bovenaan zou nu een run configuration **app** zichtbaar zijn. Deze is voor je voorgeconfigureerd en start de launcher-activiteit `com.example.aitest.MainActivity`.
+   - Zie je alleen "Add Configuration" staan? Klik dan daarop, kies **+ > Android App**, selecteer als module `app` en bevestig.
 3. **App starten**
-   - Kies in de toolbar de run configuration **app** en selecteer een emulator of verbonden apparaat (Android 7.0 of hoger).
+   - Kies een emulator of verbonden apparaat (Android 7.0 of hoger) in dezelfde toolbar.
    - Klik op **Run** (▶) om de applicatie te bouwen en te starten.
 
 ## Handmatig bouwen via Gradle
