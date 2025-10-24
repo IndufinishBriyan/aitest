@@ -1,20 +1,22 @@
 package com.example.aitest
 
 import android.os.Bundle
+import android.widget.TextView
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
-import com.example.aitest.databinding.ActivityMainBinding
 
+/**
+ * Launcher-activiteit van de app. Android Studio maakt automatisch een run configuration aan
+ * om deze activiteit te starten zodra de Gradle-sync is voltooid.
+ */
 class MainActivity : AppCompatActivity() {
-
-    private lateinit var binding: ActivityMainBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
-        binding = ActivityMainBinding.inflate(layoutInflater)
-        setContentView(binding.root)
+        setContentView(R.layout.activity_main)
 
-        binding.welcomeMessage.text = getString(R.string.welcome_message)
+        val welcomeMessage: TextView = findViewById(R.id.welcomeMessage)
+        welcomeMessage.text = getString(R.string.welcome_message)
     }
 }
