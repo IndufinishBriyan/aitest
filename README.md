@@ -28,9 +28,10 @@ gradle :app:assembleDebug
 Het gegenereerde APK-bestand vind je daarna in `app/build/outputs/apk/debug/`.
 
 ## Functies
-- Speelse data-weergave template met gradient achtergrond, categorie-chips en kleurrijke kaarten voor kernstatistieken.
-- Recyclerview-adapter en voorbeelddata waarmee je snel echte cijfers kunt injecteren.
-- Modern Material Design 3 thema met ondersteuning voor donker thema.
+- Donkere "utility control"-stijl met gradient achtergrond, overzichtstegels en KPI-kaarten geïnspireerd op industriële dashboards.
+- Twee adapters (overzichtstegels + detailkaarten) en voorbeelddata waarmee je snel realtime meetwaarden kunt aansluiten.
+- Mock-grafieken voor chemische baden om visueel ritme te geven wanneer er nog geen echte grafiekbibliotheek gekozen is.
+- Modern Material Design 3 thema met aangepaste kleuren voor een nachtmodus-uitstraling.
 - Bundelde Android Studio run configuration zodat je direct kunt starten.
 
 Veel plezier met het uitbreiden van de app!

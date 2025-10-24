@@ -12,11 +12,11 @@ class PlayfulMetricAdapter(
 ) : RecyclerView.Adapter<PlayfulMetricAdapter.MetricViewHolder>() {
 
     private val accentColors = listOf(
-        R.color.metric_card_mint,
-        R.color.metric_card_peach,
-        R.color.metric_card_lavender,
-        R.color.metric_card_sky,
-        R.color.metric_card_sunny
+        R.color.metric_accent_one,
+        R.color.metric_accent_two,
+        R.color.metric_accent_three,
+        R.color.metric_accent_four,
+        R.color.metric_accent_five
     )
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): MetricViewHolder {
@@ -35,9 +35,13 @@ class PlayfulMetricAdapter(
         val accentColor = ContextCompat.getColor(context, accentColorRes)
 
         holder.binding.apply {
-            metricCard.setCardBackgroundColor(accentColor)
+            metricCard.setCardBackgroundColor(
+                ContextCompat.getColor(context, R.color.surface_primary)
+            )
+            metricCard.strokeColor = accentColor
             metricTitle.text = metric.title
             metricValue.text = metric.primaryValue
+            metricValue.setTextColor(accentColor)
             metricDescription.text = metric.descriptor
             trendChip.text = metric.trendLabel
             if (metric.isTrendPositive) {
@@ -46,12 +50,16 @@ class PlayfulMetricAdapter(
                 trendChip.setChipBackgroundColorResource(R.color.trend_positive_background)
                 trendChip.setTextColor(color)
                 trendChip.chipIconTint = ColorStateList.valueOf(color)
+                trendChip.chipStrokeColor = ColorStateList.valueOf(color)
+                trendChip.chipStrokeWidth = context.resources.displayMetrics.density
             } else {
                 val color = ContextCompat.getColor(context, R.color.trend_negative_text)
                 trendChip.setChipIconResource(R.drawable.ic_trending_down)
                 trendChip.setChipBackgroundColorResource(R.color.trend_negative_background)
                 trendChip.setTextColor(color)
                 trendChip.chipIconTint = ColorStateList.valueOf(color)
+                trendChip.chipStrokeColor = ColorStateList.valueOf(color)
+                trendChip.chipStrokeWidth = context.resources.displayMetrics.density
             }
         }
     }

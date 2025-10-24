@@ -5,6 +5,7 @@ import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
+import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.aitest.databinding.ActivityMainBinding
 
@@ -33,40 +34,83 @@ class MainActivity : AppCompatActivity() {
             windowInsets
         }
 
+        val summaryTiles = listOf(
+            SummaryTile(
+                title = getString(R.string.summary_tile_total),
+                value = getString(R.string.summary_tile_placeholder),
+                description = getString(R.string.summary_tile_hint)
+            ),
+            SummaryTile(
+                title = getString(R.string.summary_tile_average),
+                value = getString(R.string.summary_tile_placeholder),
+                description = getString(R.string.summary_tile_hint)
+            ),
+            SummaryTile(
+                title = getString(R.string.summary_tile_min),
+                value = getString(R.string.summary_tile_placeholder),
+                description = getString(R.string.summary_tile_hint)
+            ),
+            SummaryTile(
+                title = getString(R.string.summary_tile_max),
+                value = getString(R.string.summary_tile_placeholder),
+                description = getString(R.string.summary_tile_hint)
+            ),
+            SummaryTile(
+                title = getString(R.string.summary_tile_drying),
+                value = getString(R.string.summary_tile_placeholder),
+                description = getString(R.string.summary_tile_oven_hint)
+            ),
+            SummaryTile(
+                title = getString(R.string.summary_tile_curing),
+                value = getString(R.string.summary_tile_placeholder),
+                description = getString(R.string.summary_tile_oven_hint)
+            )
+        )
+
+        binding.summaryRecycler.apply {
+            layoutManager = GridLayoutManager(
+                this@MainActivity,
+                resources.getInteger(R.integer.summary_span_count)
+            )
+            adapter = SummaryTileAdapter(summaryTiles)
+            setHasFixedSize(true)
+            isNestedScrollingEnabled = false
+        }
+
         val playfulMetrics = listOf(
             PlayfulMetric(
                 title = getString(R.string.metric_visitors_title),
-                primaryValue = "12.4K",
+                primaryValue = getString(R.string.summary_tile_placeholder),
                 descriptor = getString(R.string.metric_visitors_description),
-                trendLabel = "+18%",
+                trendLabel = getString(R.string.metric_support_trend),
                 isTrendPositive = true
             ),
             PlayfulMetric(
                 title = getString(R.string.metric_sales_title),
-                primaryValue = "€8.9K",
+                primaryValue = getString(R.string.summary_tile_placeholder),
                 descriptor = getString(R.string.metric_sales_description),
-                trendLabel = "+6%",
+                trendLabel = getString(R.string.metric_support_trend),
                 isTrendPositive = true
             ),
             PlayfulMetric(
                 title = getString(R.string.metric_retention_title),
-                primaryValue = "72%",
+                primaryValue = getString(R.string.summary_tile_placeholder),
                 descriptor = getString(R.string.metric_retention_description),
-                trendLabel = "-3%",
+                trendLabel = getString(R.string.metric_attention_trend),
                 isTrendPositive = false
             ),
             PlayfulMetric(
                 title = getString(R.string.metric_support_title),
-                primaryValue = "94",
+                primaryValue = getString(R.string.summary_tile_placeholder),
                 descriptor = getString(R.string.metric_support_description),
                 trendLabel = getString(R.string.metric_support_trend),
                 isTrendPositive = true
             ),
             PlayfulMetric(
                 title = getString(R.string.metric_social_title),
-                primaryValue = "1.7K",
+                primaryValue = getString(R.string.summary_tile_placeholder),
                 descriptor = getString(R.string.metric_social_description),
-                trendLabel = "+240",
+                trendLabel = getString(R.string.metric_support_trend),
                 isTrendPositive = true
             )
         )
@@ -75,11 +119,8 @@ class MainActivity : AppCompatActivity() {
             layoutManager = LinearLayoutManager(this@MainActivity)
             adapter = PlayfulMetricAdapter(playfulMetrics)
             setHasFixedSize(true)
+            isNestedScrollingEnabled = false
         }
-
-        binding.summaryCardTitle.text = getString(R.string.summary_card_title)
-        binding.summaryCardValue.text = getString(R.string.summary_card_value)
-        binding.summaryCardSubtitle.text = getString(R.string.summary_card_subtitle)
     }
 }
 

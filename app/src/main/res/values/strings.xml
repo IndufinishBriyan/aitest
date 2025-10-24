@@ -4,25 +4,41 @@
     <string name="welcome_message">Welkom bij de volledige Android-app!
 Deze app is een eenvoudige basis waarop je verder kunt bouwen.</string>
 
-    <string name="dashboard_title">Speelse Data Studio</string>
-    <string name="dashboard_subtitle">Laat je cijfers dansen en ontdek nieuwe verhalen.</string>
-    <string name="summary_card_title">Totale glimlachen vandaag</string>
-    <string name="summary_card_value">4.321</string>
-    <string name="summary_card_subtitle">+342 ten opzichte van gisteren – goed bezig!</string>
+    <string name="dashboard_title">Utility Control Center</string>
+    <string name="dashboard_subtitle">Monitor energie- en procesdata vanaf één speels overzicht.</string>
 
-    <string name="chip_people">Team vibes</string>
-    <string name="chip_sales">Shop sparkles</string>
-    <string name="chip_retention">Happy hearts</string>
+    <string name="summary_section_title">Elektriciteit KPIs &amp; grafieken</string>
+    <string name="summary_tile_total">Totaal</string>
+    <string name="summary_tile_average">Gemiddeld</string>
+    <string name="summary_tile_min">Minimum</string>
+    <string name="summary_tile_max">Maximum</string>
+    <string name="summary_tile_drying">Droogoven</string>
+    <string name="summary_tile_curing">Uithardingsoven</string>
+    <string name="summary_tile_placeholder">Geen data beschikbaar</string>
+    <string name="summary_tile_hint">Wacht op live feed</string>
+    <string name="summary_tile_oven_hint">Controleer sensorstatus</string>
 
-    <string name="metric_visitors_title">Stralende bezoekers</string>
-    <string name="metric_visitors_description">Mensen die vandaag even kwamen gluren.</string>
-    <string name="metric_sales_title">Magische verkopen</string>
-    <string name="metric_sales_description">Spulletjes die een nieuw thuis vonden.</string>
-    <string name="metric_retention_title">Terugkerende fans</string>
-    <string name="metric_retention_description">Percentages bezoekers die terug blijven komen.</string>
-    <string name="metric_support_title">Super support tickets</string>
-    <string name="metric_support_description">Vragen die met een glimlach zijn opgelost.</string>
-    <string name="metric_support_trend">+12 opgelost</string>
-    <string name="metric_social_title">Sociale shout-outs</string>
-    <string name="metric_social_description">Nieuwe volgers en mentions van vandaag.</string>
+    <string name="chemical_section_title">Chemicaliën KPIs &amp; grafieken</string>
+    <string name="chemical_usage_value">3.6 L</string>
+    <string name="chemical_usage_label">Totale chemicaliën-inzet</string>
+    <string name="chemical_pumps_value">2</string>
+    <string name="chemical_pumps_label">Actieve doseerpompen</string>
+    <string name="chemical_bath_one_title">Bad 5 dosing 1</string>
+    <string name="chemical_bath_one_hint">Trend afgelopen uur</string>
+    <string name="chemical_bath_two_title">Bad 5 dosing 1</string>
+    <string name="chemical_bath_two_hint">Voorbeeldgrafiek</string>
+
+    <string name="gas_section_title">Gas KPIs &amp; grafieken</string>
+    <string name="metric_visitors_title">Gasflow lijn 1</string>
+    <string name="metric_visitors_description">Nog geen recente doorstroom gemeten.</string>
+    <string name="metric_sales_title">Ketelbelasting</string>
+    <string name="metric_sales_description">Wachtend op realtime vermogensgegevens.</string>
+    <string name="metric_retention_title">Oven temperatuur</string>
+    <string name="metric_retention_description">Sensor levert tijdelijk geen waarden.</string>
+    <string name="metric_support_title">Lekdetectie</string>
+    <string name="metric_support_description">Geen meldingen binnengekomen.</string>
+    <string name="metric_support_trend">Stand-by</string>
+    <string name="metric_attention_trend">Sensor offline</string>
+    <string name="metric_social_title">Gasdruk variatie</string>
+    <string name="metric_social_description">Variatie wordt nog berekend.</string>
 </resources>

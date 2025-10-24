@@ -5,10 +5,11 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:layout_marginBottom="16dp"
-    app:cardCornerRadius="24dp"
-    app:cardElevation="4dp"
-    app:strokeColor="@android:color/transparent"
-    app:strokeWidth="0dp">
+    app:cardBackgroundColor="@color/surface_primary"
+    app:cardCornerRadius="20dp"
+    app:cardElevation="2dp"
+    app:strokeColor="@color/surface_elevated"
+    app:strokeWidth="1dp">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -21,23 +22,23 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textAppearance="@style/TextAppearance.Material3.TitleMedium"
-            android:textColor="@color/summary_card_value" />
+            android:textColor="@color/text_primary" />
 
         <TextView
             android:id="@+id/metricValue"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
-            android:textAppearance="@style/TextAppearance.Material3.DisplaySmall"
-            android:textColor="@color/summary_card_title" />
+            android:layout_marginTop="6dp"
+            android:textAppearance="@style/TextAppearance.Material3.HeadlineSmall"
+            android:textColor="@color/accent_cyan" />
 
         <TextView
             android:id="@+id/metricDescription"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
+            android:layout_marginTop="6dp"
             android:textAppearance="@style/TextAppearance.Material3.BodyMedium"
-            android:textColor="@color/summary_card_value" />
+            android:textColor="@color/text_secondary" />
 
         <com.google.android.material.chip.Chip
             android:id="@+id/trendChip"
@@ -45,7 +46,9 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="12dp"
+            android:minHeight="36dp"
             android:text="@string/metric_support_trend"
+            app:chipBackgroundColor="@color/surface_secondary"
             app:shapeAppearanceOverlay="@style/ShapeAppearance.Material3.Corner.Small" />
     </LinearLayout>
 
