@@ -13,8 +13,8 @@ Het project gebruikt Kotlin, AndroidX en Material Design componenten en toont ee
    - Open de map in Android Studio (Giraffe of nieuwer aanbevolen).
    - Zodra het project is geladen, start Android Studio automatisch een Gradle-sync. Wacht tot deze voltooid is (linksonder verschijnt "Gradle sync finished").
 2. **Run configuration kiezen**
-   - In de toolbar bovenaan zou nu een run configuration **app** zichtbaar zijn. Deze is voor je voorgeconfigureerd en start de launcher-activiteit `com.example.aitest.MainActivity`.
-   - Zie je alleen "Add Configuration" staan? Klik dan daarop, kies **+ > Android App**, selecteer als module `app` en bevestig.
+   - In de toolbar bovenaan zou nu een run configuration **app** zichtbaar moeten zijn. Deze is voorgeconfigureerd met de module `AITestApp.app` en start de launcher-activiteit `com.example.aitest.MainActivity`.
+   - Zie je "Add Configuration" of toont de bestaande configuratie "No module"? Klik dan op het dropdown-menu, kies **Edit Configurations...**, selecteer **app** en kies in het veld **Module** de optie `AITestApp.app`. Bevestig met **OK**.
 3. **App starten**
    - Kies een emulator of verbonden apparaat (Android 7.0 of hoger) in dezelfde toolbar.
    - Klik op **Run** (▶) om de applicatie te bouwen en te starten.
