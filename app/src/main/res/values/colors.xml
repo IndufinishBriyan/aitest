@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Brand palette -->
+    <color name="accent_pink">#FF5C9A</color>
+    <color name="accent_orange">#FF9F4A</color>
+    <color name="accent_violet">#A875FF</color>
+    <color name="accent_cyan">#4EC9FF</color>
+
+    <!-- Surface colors -->
+    <color name="dashboard_background">#0F1423</color>
+    <color name="surface_primary">#1A2132</color>
+    <color name="surface_secondary">#232C40</color>
+    <color name="surface_elevated">#27344A</color>
+
+    <!-- Text colors -->
+    <color name="text_primary">#F4F8FF</color>
+    <color name="text_secondary">#A8B3CC</color>
+    <color name="text_muted">#6F7A93</color>
+
+    <!-- Metric accents -->
+    <color name="metric_accent_one">#FF5C9A</color>
+    <color name="metric_accent_two">#4EC9FF</color>
+    <color name="metric_accent_three">#FF9F4A</color>
+    <color name="metric_accent_four">#A875FF</color>
+    <color name="metric_accent_five">#4DDBB5</color>
+
+    <color name="trend_positive_background">#1A2E7D32</color>
+    <color name="trend_positive_text">#7DFFB3</color>
+    <color name="trend_negative_background">#1AD32F2F</color>
+    <color name="trend_negative_text">#FF7B7B</color>
+
+    <color name="chip_icon_tint">#FFFFFFFF</color>
+    <color name="ic_launcher_background">#1A2132</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="black">#FF000000</color>
+</resources>

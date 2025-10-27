@@ -1,0 +1,17 @@
+# Gradle files
+.gradle/
+build/
+app/build/
+
+# Android Studio
+.idea/
+!.idea/runConfigurations/
+!.idea/runConfigurations/*.xml
+*.iml
+
+# Local configuration
+local.properties
+
+# Log/OS files
+*.log
+.DS_Store
